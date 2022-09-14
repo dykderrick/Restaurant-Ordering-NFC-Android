@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llManu" />
+
+    <LinearLayout
+        android:id="@+id/llManu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlHome"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_black_100" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLocation"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_black_100"
+                android:tint="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSetting"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivSetting"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_black_100"
+                android:tint="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlHeart"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivHeart"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_black_100"
+                android:tint="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlUser"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivUser"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_black_100"
+                android:tint="@color/gray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

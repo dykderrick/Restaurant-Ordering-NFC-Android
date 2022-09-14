@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splahscreen_backgroud"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_white_coners_25">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    fontPath="@string/font_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text="@string/welcome_to_nfc_restaurant"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/registrationTableNoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_are_registering_for"
+                    android:textColor="@color/black" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edPhone"
+                            fontPath="@string/font_bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittextstyle"
+                            android:hint="@string/phone"
+                            android:inputType="phone"
+                            android:minHeight="@dimen/_35sdp"
+                            android:textColor="@color/black" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edYourName"
+                            fontPath="@string/font_bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittextstyle"
+                            android:hint="@string/your_name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/_35sdp"
+                            android:textColor="@color/black" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/how_many_diners_do_you_have" />
+
+                    <Spinner
+                        android:id="@+id/dinerQuantitySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/diningMethodRadioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioEatIn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="@string/eat_in" />
+
+                            <RadioButton
+                                android:id="@+id/radioTakeAway"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="@string/take_away" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="#DEDEDE" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvSubmit"
+                    fontPath="@string/font_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_56sdp"
+                    android:background="@drawable/bg_black_coners_10"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

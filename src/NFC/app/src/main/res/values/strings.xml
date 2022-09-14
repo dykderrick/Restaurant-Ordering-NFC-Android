@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">NFC</string>
+    <string name="realmAppID">android-ordering-ercfe</string>
+    <string name="paypal_client_id">AZ7dZzz5yXFrKjPSXyMDHuwDbens3Ef3lE3Yn1SFFQVRT1XU5jkTNlU7UKKivL7kHLeIUVnZDR75WmAh</string>
+
+
+    <string name="no_internet">No internet connection \n Go to setting and connect to network.</string>
+    <string name="error_msg">Please try again something went to wrong</string>
+    <string name="conform_password">Conform Password</string>
+    <string name="logout">Are you sure you won\'t to logout</string>
+
+    <string name="pound">£</string>
+    <string name="minus_pound">-£</string>
+
+    <!--GILROY-->
+    <string name="font_regular">fonts/SF-PRO-DISPLAY-REGULAR.OTF</string>
+    <string name="font_medium">fonts/SF-PRO-DISPLAY-MEDIUM.OTF</string>
+    <string name="font_bold">fonts/SF-PRO-DISPLAY-BOLD.OTF</string>
+    <string name="font_semibold">fonts/SF-PRO-DISPLAY-SEMIBOLD.OTF</string>
+
+
+    <string name="font_mark_web_thin">fonts/SF-PRO-DISPLAY-THIN.OTF</string>
+
+
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="exit_conformation">Are you sure you won\'t to exit this app</string>
+
+    <string name="welcome_to_nfc_restaurant">Welcome to NFC Restaurant</string>
+    <string name="you_are_registering_for">You are registering for </string>
+    <string name="your_name">Your Name</string>
+    <string name="phone">Phone</string>
+    <string name="how_many_diners_do_you_have">How many diners do you have?</string>
+    <string name="eat_in">Eat In</string>
+    <string name="take_away">Take Away</string>
+    <string name="submit">Submit</string>
+
+    <string name="hi">Hi,&#160;</string>
+    <string name="place_your_order">Place your order here</string>
+
+    <string name="my_orders">My Orders</string>
+    <string name="see_bill">See Bill</string>
+
+    <string name="promo_code">Promo Code</string>
+    <string name="enter_promo_code">Enter Promo Code</string>
+    <string name="apply">Apply</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="taxes">Taxes</string>
+    <string name="promo_discount">Promo Discount</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="order_now">Order Now</string>
+
+    <string name="next">Next</string>
+    <string name="pay_now">Pay Now</string>
+
+    <string name="payment_success">Payment Successful!</string>
+    <string name="exit">Exit</string>
+
+
+</resources>

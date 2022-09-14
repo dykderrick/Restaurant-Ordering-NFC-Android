@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_coners_25"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp">
+
+        <LinearLayout
+            android:id="@+id/lyPromoCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPromoCode"
+                fontPath="@string/font_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/promo_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_edittext"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    android:id="@+id/edPromoCode"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_promo_code"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_7sdp"
+                    android:scrollbars="none"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/tvApply"
+                    fontPath="@string/font_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_applytext_box"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:text="@string/apply"
+                    android:textColor="#007BCE"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOrderSummary"
+                fontPath="@string/font_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/order_summary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    fontPath="@string/font_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sub_total"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/tvSubTotal"
+                    fontPath="@string/font_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pound"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    fontPath="@string/font_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/taxes"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/tvTaxes"
+                    fontPath="@string/font_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pound"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyPromoDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    fontPath="@string/font_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/promo_discount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/tvPromoDiscount"
+                    fontPath="@string/font_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minus_pound"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@color/gray_divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    fontPath="@string/font_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/tvTotalMoney"
+                    fontPath="@string/font_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pound"
+                    android:textColor="@color/green_prise"
+                    android:textSize="@dimen/_14ssp"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lyOrderBY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/white"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                fontPath="@string/font_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_black_coners_10"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/pay_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="MissingPrefix" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

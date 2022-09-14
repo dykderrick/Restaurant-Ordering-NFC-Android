@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_10sdp">
+
+    <ImageView
+        android:id="@+id/ivFood_img"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/food_1"/>
+
+    <RelativeLayout
+        android:id="@+id/lyDetails"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/ivFood_img">
+
+        <TextView
+            android:id="@+id/tvFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="@string/font_semibold"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:text="Egg Salad"
+            tools:ignore="MissingPrefix" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/ivSub"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:src="@drawable/sub_button" />
+
+                <TextView
+                    android:id="@+id/tvFoodCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fontPath="@string/font_semibold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingPrefix" />
+
+                <ImageView
+                    android:id="@+id/ivAdd"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:src="@drawable/add_button"/>
+
+            </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/trash"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvFoodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fontPath="@string/font_bold"
+        android:text="£15"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:textColor="#1BAA00"
+        android:textSize="@dimen/_12ssp"
+        tools:ignore="MissingPrefix" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lyDetails"
+        android:background="#DEDEDE"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+
+</RelativeLayout>

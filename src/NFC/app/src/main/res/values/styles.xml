@@ -1,0 +1,88 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <!--AlertDailog Style-->
+    <style name="AppCompatAlertDialogStyleBig" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">95%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+        <item name="android:windowAnimationStyle">@style/AnimationDialogWindow</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+
+    <!--AlertDailog Style-->
+    <style name="AppCompatAlertDialogStyleSmall" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">75%</item>
+        <item name="android:windowMinWidthMinor">75%</item>
+        <item name="android:windowAnimationStyle">@style/AnimationDialogWindow</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+
+    <!--AlertDailog Style-->
+    <style name="AnimationDialogWindow">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <style name="CardView_orange_rect" parent="CardView">
+        <item name="android:layout_height">35dp</item>
+        <item name="cardCornerRadius">6dp</item>
+        <item name="android:backgroundTint" tools:ignore="NewApi">@color/black</item>
+    </style>
+
+    <style name="tow_logout_button" >
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@drawable/bg_black_corner_5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:paddingTop">@dimen/_8sdp</item>
+        <item name="android:paddingBottom">@dimen/_8sdp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="single_button" >
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/_100sdp</item>
+        <item name="android:background">@drawable/bg_black_corner_5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+
+        <item name="android:paddingTop">@dimen/_8sdp</item>
+        <item name="android:paddingBottom">@dimen/_8sdp</item>
+    </style>
+
+
+    <style name="splash_screen_theam" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+
+    </style>
+
+<!--    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">-->
+<!--        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>-->
+<!--        <item name="android:windowBackground">@null</item>-->
+<!--        <item name="android:windowFrame">@null</item>-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--    </style>-->
+</resources>

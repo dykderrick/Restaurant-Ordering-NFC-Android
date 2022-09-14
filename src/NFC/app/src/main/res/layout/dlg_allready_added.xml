@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_coners_25"
+        android:paddingRight="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvOrderSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                fontPath="@string/font_bold"
+                android:text="Food is already in the cart"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/black"
+                tools:ignore="MissingPrefix" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lyOrderBY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="@dimen/_10sdp"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fontPath="@string/font_semibold"
+                android:textSize="@dimen/_12ssp"
+                android:text="Okay"
+                android:background="@drawable/bg_black_coners_10"
+                android:textColor="@color/white"
+                android:padding="@dimen/_15sdp"
+                android:gravity="center"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
